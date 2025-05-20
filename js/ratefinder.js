@@ -2,7 +2,9 @@ import * as service from "./rate-service-mock";
 
 service
   .findAll()
+  .then((res) => res.data)
   .then((rates) => {
+    console.log(rates);
     let html = "";
     rates.forEach(
       (rate) =>
