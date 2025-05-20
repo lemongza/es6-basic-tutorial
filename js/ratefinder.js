@@ -1,7 +1,7 @@
-let url = "rates.json";
+import * as service from "./rate-service-mock";
 
-fetch(url)
-  .then((response) => response.json())
+service
+  .findAll()
   .then((rates) => {
     let html = "";
     rates.forEach(

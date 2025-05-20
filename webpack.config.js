@@ -26,6 +26,13 @@ module.exports = {
   stats: {
     colors: true,
   },
+  stats: {
+    colors: true,
+  },
+  devServer: {
+    port: 9000,
+    open: true,
+  },
   devtool: "source-map",
   mode: "development",
 };
