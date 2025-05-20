@@ -1,4 +1,6 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const { plugin } = require("mongoose");
 
 module.exports = {
   entry: { app: "./js/main.js", ratefinder: "./js/ratefinder.js" },
@@ -20,6 +22,7 @@ module.exports = {
       },
     ],
   },
+  plugin: [new CleanWebpackPlugin()],
   stats: {
     colors: true,
   },
